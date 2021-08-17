@@ -1,5 +1,9 @@
 const APP = () => {
-  console.log("app");
+  const [INPUT] = document.getElementsByTagName('input');
+
+  INPUT.addEventListener('submit', (event) => {
+    console.log(event);
+  });
 };
 
 export { APP };

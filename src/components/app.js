@@ -1,4 +1,5 @@
 import 'regenerator-runtime/runtime';
+import { RENDER_DATA } from './render_data.js';
 
 const APP = () => {
   const FORM_SUBMIT_HANDLER = async (event) => {
@@ -10,7 +11,7 @@ const APP = () => {
         `https://api.openweathermap.org/data/2.5/weather?q=${USER_INPUT}&appid=${API_KEY}`
       );
       const RESOLVED = await RESPONSE.json();
-      await console.log(RESOLVED);
+      await RENDER_DATA(RESOLVED);
     } catch (error) {
       console.log(error);
     }

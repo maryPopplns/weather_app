@@ -1,6 +1,8 @@
 const APP = () => {
-  const [INPUT] = document.getElementsByTagName('input');
-  INPUT.addEventListener('submit', (event) => {
+  const FORM = document.getElementById('input_form');
+
+  FORM.addEventListener('submit', (event) => {
+    event.preventDefault();
     console.log(event);
   });
 };

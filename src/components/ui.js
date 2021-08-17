@@ -4,7 +4,9 @@ const UI = () => {
   const INPUT = document.createElement('input');
   const SUBMIT = document.createElement('input');
 
+  FORM.id = 'input_form';
   INPUT.setAttribute('type', 'text');
+  INPUT.id = 'text_input';
   SUBMIT.setAttribute('type', 'submit');
   SUBMIT.id = 'submit_input';
 

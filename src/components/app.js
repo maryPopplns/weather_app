@@ -9,7 +9,8 @@ const APP = () => {
       const RESPONSE = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${USER_INPUT}&appid=${API_KEY}`
       );
-      console.log(RESPONSE);
+      const RESOLVED = await RESPONSE.json();
+      await console.log(RESOLVED);
     } catch (error) {
       console.log(error);
     }

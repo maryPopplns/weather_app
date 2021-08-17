@@ -1,5 +1,7 @@
 const UI = () => {
-  console.log("ui");
+  const MAIN = document.createElement("main");
+
+  document.body.append(MAIN);
 };
 
 export { UI };

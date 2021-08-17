@@ -1,3 +1,5 @@
+import 'regenerator-runtime/runtime';
+
 const APP = () => {
   const FORM = document.getElementById('input_form');
 

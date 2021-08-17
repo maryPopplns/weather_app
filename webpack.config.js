@@ -5,7 +5,7 @@ const Dotenv = require('dotenv-webpack');
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js',
+    index: ['regenerator-runtime/runtime.js', './src/index.js'],
   },
   devtool: 'inline-source-map',
   devServer: {

@@ -2,4 +2,10 @@
   #submit_input {
     display: none;
   }
+
+  #display_container {
+    height: 10em;
+    width: 10em;
+    border: 1px solid black;
+  }
 }

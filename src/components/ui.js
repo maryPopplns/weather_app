@@ -14,6 +14,8 @@ const UI = () => {
   MAIN.append(FORM);
   FORM.append(INPUT);
   FORM.append(SUBMIT);
+
+  INPUT.focus();
 };
 
 export { UI };

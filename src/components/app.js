@@ -1,4 +1,4 @@
-import 'regenerator-runtime/runtime';
+import { process } from 'regenerator-runtime/runtime';
 import { RENDER_DATA } from './render_data.js';
 
 const APP = () => {
@@ -10,6 +10,7 @@ const APP = () => {
       const RESPONSE = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${USER_INPUT}&appid=${API_KEY}`
       );
+      // const STATUS_CODE = RESPONSE.status;
       const RESOLVED = await RESPONSE.json();
       await RENDER_DATA(RESOLVED);
     } catch (error) {
